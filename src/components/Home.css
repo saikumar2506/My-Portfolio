@@ -1,0 +1,123 @@
+/* Home Section */
+#home {
+    background: #011e05;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 6rem 2rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+/* Container */
+#home .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem; /* Ensure spacing between image & content */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Content */
+#home .content {
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem;
+}
+
+/* Heading */
+#home h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem; /* Reduce space between h2 and p */
+    font-weight: 700; /* Make title bold */
+}
+
+/* Name Highlight */
+#home .name {
+    font-size: 2.5rem;
+    color: #a5b72f;
+}
+
+/* Role Animation */
+.role {
+    font-size: 1.5rem;
+    font-weight: 400; /* Lighter weight */
+    color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid #FCA311;
+    width: fit-content;
+    animation: blinkCursor 0.8s infinite;
+    margin-top: 0.5rem;
+    opacity: 0.8; /* Reduce opacity */
+}
+
+/* Paragraph */
+#home p {
+    color: rgba(229, 229, 229, 0.7); /* Reduce opacity for lightweight effect */
+    font-size: 1.2rem;
+    margin-top: 0.3rem; /* Reduce space */
+}
+
+/* Profile Image */
+.profile-image {
+    width: 450px;
+    height: 550px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect for Image */
+.profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Cursor Blink Animation */
+@keyframes blinkCursor {
+    50% { border-color: transparent; }
+}
+
+/* Fade-in Animation */
+@keyframes fadeInUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+    #home {
+        padding: 7rem 1.5rem 2rem;
+        height: auto;
+    }
+
+    #home .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem; /* Adjust space between elements */
+    }
+
+    #home .content {
+        text-align: center;
+        margin: 0;
+    }
+
+    .profile-image {
+        width: 250px;
+        height: 300px;
+        margin-top: 1rem;
+    }
+
+    .role {
+        font-size: 1.3rem; /* Adjust for smaller screens */
+    }
+}

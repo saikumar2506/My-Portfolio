@@ -1,0 +1,70 @@
+#contact {
+    background: #011e05;
+    color: #FFFFFF;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #bc6722;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form input,
+#contact form textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#contact form button {
+    padding: 1rem;
+    background: #FCA311;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+#contact form button:hover {
+    background: #011e05;
+    border: 1px solid white;
+}
+/* Success & Error Message Styling */
+.response-message {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0.8rem;
+    border-radius: 5px;
+    text-align: center;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Green for Success */
+.response-message.success {
+    color: #155724;
+    background: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+/* Red for Error */
+.response-message.error {
+    color: #721c24;
+    background: #f8d7da;
+    border: 1px solid #f5c6cb;
+}

@@ -1,0 +1,69 @@
+#projects {
+    background: #E5E5E5;
+    padding: 4rem 0;
+    text-align: center;
+    color: #bc6722;
+}
+
+#projects h2 {
+    color: #bc6722;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.project-card {
+    display: inline-block;
+    background: #FFFFFF;
+    padding: 2rem;
+    margin: 1rem;
+    width: 300px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Default shadow effect */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Align text to the left */
+    overflow: hidden; /* Ensures that content doesn't overflow the card */
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2); /* Increased shadow spread on hover */
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition for the image */
+}
+
+.project-card img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect on hover */
+}
+
+.project-card h3 {
+    margin-top: 1rem;
+    color: #14213D;
+    font-size: 1.5rem;
+}
+
+.project-card p {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #bc6722;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+h2{
+    color: #bc6722;
+}

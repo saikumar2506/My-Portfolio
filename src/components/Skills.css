@@ -1,0 +1,64 @@
+#skills {
+    padding: 7.5rem 2rem 4rem 2rem;
+    background-color: #011e05; /* Match the overall theme */
+    color: #FFFFFF;
+    text-align: center;
+}
+
+#skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #bc6722; /* Highlight the section title */
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+}
+
+.icon {
+    font-size: 4rem;
+    transition: color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.html {
+    color: #E34C26;
+}
+
+.css {
+    color: #1572B6;
+}
+
+.react {
+    color: #61DBFB;
+}
+
+.express {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+.nodejs {
+    color: #83CD29;
+}
+
+.icon:hover {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    color: #FCA311; /* Change to a highlighted color */
+}

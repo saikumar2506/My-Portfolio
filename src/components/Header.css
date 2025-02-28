@@ -1,0 +1,99 @@
+/* Header Section */
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(45deg, #000000, #011e05);
+    color: white;
+    padding: 20px 0;
+    z-index: 10;
+  }
+  
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  /* Logo */
+  header .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #9c5543;
+  }
+  
+  /* Navigation List */
+  header nav ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  header nav ul li {
+    margin-left: 20px;
+  }
+  
+  header nav ul li a {
+    color: #835656;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  /* Hover Effect */
+  header nav ul li a:hover {
+    color: #b8391a;
+  }
+  
+  /* Hamburger Menu */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #FFFFFF;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    /* Hide menu by default */
+    header nav ul {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: linear-gradient(45deg, #000000, #02050c); /* Same gradient */
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      transition: all 0.3s ease-in-out;
+    }
+  
+    /* Show menu when active */
+    header nav ul.active {
+      display: flex;
+    }
+  
+    /* Adjust list items */
+    header nav ul li {
+      margin: 15px 0;
+    }
+  
+    /* Maintain hover effect on mobile */
+    header nav ul li a {
+      display: block;
+      padding: 10px;
+      color: #FFFFFF;
+      transition: color 0.3s ease-in-out;
+    }
+  
+    header nav ul li a:hover {
+      color: #FCA311;
+    }
+  
+    /* Show the menu toggle icon */
+    .menu-toggle {
+      display: block;
+    }
+  }
+  
