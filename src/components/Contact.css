@@ -1,5 +1,5 @@
 #contact {
-    background: #011e05;
+    background: #0a0233;
     color: #FFFFFF;
     padding: 4rem 0;
     text-align: center;
@@ -39,7 +39,7 @@
 }
 
 #contact form button:hover {
-    background: #011e05;
+    background: #0a0233;
     border: 1px solid white;
 }
 /* Success & Error Message Styling */
@@ -57,9 +57,9 @@
 
 /* Green for Success */
 .response-message.success {
-    color: #155724;
-    background: #d4edda;
-    border: 1px solid #c3e6cb;
+    color: #1f1557;
+    background: #848bcb;
+    border: 1px solid #968cbd;
 }
 
 /* Red for Error */
